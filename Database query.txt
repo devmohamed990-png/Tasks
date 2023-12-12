@@ -3,4 +3,4 @@ JOIN user AS u
 ON td.user_id = u.user_id
 GROUP BY u.user_id, td.training_date, td.training_id
 HAVING COUNT(*) > 1
-ORDER BY td.training_date DESC
+ORDER BY td.training_date DESC;
